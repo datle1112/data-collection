@@ -1,0 +1,25 @@
+{
+  "name": "vaisala_project_prototype",
+  "version": "1.0.0",
+  "description": "Basic idea of this project is monitor temperature in 2 different places inside apartment. \r - Express server is programmed on laptop and then deployed on Heroku \r - Temperature  will be measured by DHT11 and KY-028 sensors. After that, data will be sent to Express server\r - Sending data is done by using POST request (or maybe other approaches). A simple front-end website will be designed to display these data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/index.js",
+    "DB": "C:/Users/ledat/mongoDB/mongo_DB/bin/mongod.exe --dbpath=/Users/ledat/mongoDB_data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.4",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.3.16"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  }
+}
